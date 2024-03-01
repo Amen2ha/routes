@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<div *ngFor="let product of products">
+    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">{{product.code}}</div>
+        <div class="card-body">
+          <h4 class="card-title">{{product.name}}</h4>
+          <p class="card-text">{{product.price}}</p>
+        </div> 
+      </div>
+    </div>
